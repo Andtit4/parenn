@@ -15,7 +15,7 @@
           >
             <form>
               <h4 class="mtext-105 cl2 txt-center p-b-30">
-                Send Us A Message
+                Envoyez un message
               </h4>
 
               <div class="bor8 m-b-20 how-pos4-parent">
@@ -23,7 +23,7 @@
                   class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30"
                   type="text"
                   name="email"
-                  placeholder="Your Email Address"
+                  placeholder="Votre adresse courrielle"
                 />
                 <img
                   class="how-pos4 pointer-none"
@@ -36,14 +36,14 @@
                 <textarea
                   class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25"
                   name="msg"
-                  placeholder="How Can We Help?"
+                  placeholder="Indiquez-nous comment vous aider?"
                 ></textarea>
               </div>
 
               <button
                 class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer"
               >
-                Submit
+                Envoyer
               </button>
             </form>
           </div>
@@ -58,12 +58,11 @@
 
               <div class="size-212 p-t-2">
                 <span class="mtext-110 cl2">
-                  Address
+                  Adresse
                 </span>
 
                 <p class="stext-115 cl6 size-213 p-t-18">
-                  Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018
-                  US
+                  Delmas 19, Paul II, Port-au-Prince, Haiti US
                 </p>
               </div>
             </div>
@@ -75,11 +74,11 @@
 
               <div class="size-212 p-t-2">
                 <span class="mtext-110 cl2">
-                  Lets Talk
+                  Appelez-nous
                 </span>
 
                 <p class="stext-115 cl1 size-213 p-t-18">
-                  +1 800 1236879
+                  +(509) 44 54 54 25
                 </p>
               </div>
             </div>
@@ -91,11 +90,11 @@
 
               <div class="size-212 p-t-2">
                 <span class="mtext-110 cl2">
-                  Sale Support
+                  Support
                 </span>
 
                 <p class="stext-115 cl1 size-213 p-t-18">
-                  contact@example.com
+                  info@parenn.ht
                 </p>
               </div>
             </div>

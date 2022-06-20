@@ -3,12 +3,11 @@
     <div class="container">
       <div class="p-b-32">
         <h3 class="ltext-105 cl5 txt-center respon1">
-          Store Overview
+          Nos produits
         </h3>
       </div>
       <!-- Store overview tab -->
       <div class="store-overview-tab">
-        <!-- Nav tabs -->
         <b-tabs content-class="p-t-43">
           <b-tab
             v-for="(item, index) in tabListData"
@@ -18,6 +17,7 @@
             @click="setCurrentTab(item.tabName)"
           >
             <StoreOverviewCarousel
+              style="i"
               v-if="currentActiveTab == item.tabName"
               v-bind:current-tab-data="item"
             />
@@ -38,185 +38,111 @@ export default {
     return {
       tabListData: [
         {
-          tabName: "Best Seller",
+          tabName: "Eau en bouteille",
           product: [
             {
-              productImg: "product-01.jpg",
+              productImg: "img4.jpg",
+              productName: "Herschel supply",
+              productCost: "$35.31"
+            }
+          ]
+        },
+        {
+          tabName: "Parfum",
+          product: [
+            {
+              productImg: "img3.jpg",
               productName: "Esprit Ruffle Shirt",
               productCost: "$16.64"
-            },
-            {
-              productImg: "product-02.jpg",
-              productName: "Herschel supply",
-              productCost: "$35.31"
-            },
-            {
-              productImg: "product-03.jpg",
-              productName: "Only Check Trouser",
-              productCost: "$25.50"
-            },
-            {
-              productImg: "product-04.jpg",
-              productName: "Classic Trench Coat",
-              productCost: "$75.00"
-            },
-            {
-              productImg: "product-05.jpg",
-              productName: "Front Pocket Jumper",
-              productCost: "$34.75"
-            },
-            {
-              productImg: "product-06.jpg",
-              productName: "Vintage Inspired Classic",
-              productCost: "$93.20"
-            },
-            {
-              productImg: "product-07.jpg",
-              productName: "Shirt in Stretch Cotton",
-              productCost: "$52.66"
-            },
-            {
-              productImg: "product-08.jpg",
-              productName: "Pieces Metallic Printed",
-              productCost: "$18.96"
             }
           ]
         },
+
         {
-          tabName: "Featured",
+          tabName: "Sac a poubelle",
           product: [
             {
-              productImg: "product-01.jpg",
+              productImg: "img6.jpg",
               productName: "Esprit Ruffle Shirt",
               productCost: "$16.64"
-            },
-            {
-              productImg: "product-02.jpg",
-              productName: "Herschel supply",
-              productCost: "$35.31"
-            },
-            {
-              productImg: "product-03.jpg",
-              productName: "Only Check Trouser",
-              productCost: "$25.50"
-            },
-            {
-              productImg: "product-04.jpg",
-              productName: "Classic Trench Coat",
-              productCost: "$75.00"
-            },
-            {
-              productImg: "product-05.jpg",
-              productName: "Front Pocket Jumper",
-              productCost: "$34.75"
-            },
-            {
-              productImg: "product-06.jpg",
-              productName: "Vintage Inspired Classic",
-              productCost: "$93.20"
-            },
-            {
-              productImg: "product-07.jpg",
-              productName: "Shirt in Stretch Cotton",
-              productCost: "$52.66"
-            },
-            {
-              productImg: "product-08.jpg",
-              productName: "Pieces Metallic Printed",
-              productCost: "$18.96"
             }
           ]
         },
         {
-          tabName: "Sale",
+          tabName: "Ciment",
           product: [
             {
-              productImg: "product-02.jpg",
-              productName: "Herschel supply",
+              productImg: "img5.jpg",
+              productName: "CIMENT PARENN",
               productCost: "$35.31"
-            },
-            {
-              productImg: "product-04.jpg",
-              productName: "Classic Trench Coat",
-              productCost: "$75.00"
-            },
-            {
-              productImg: "product-06.jpg",
-              productName: "Vintage Inspired Classic",
-              productCost: "$93.20"
-            },
-            {
-              productImg: "product-09.jpg",
-              productName: "Converse All Star Hi Plimsolls",
-              productCost: "$75.00"
-            },
-            {
-              productImg: "product-11.jpg",
-              productName: "Herschel supply",
-              productCost: "$63.16"
-            },
-            {
-              productImg: "product-13.jpg",
-              productName: "T-Shirt with Sleeve",
-              productCost: "$18.49"
-            },
-            {
-              productImg: "product-15.jpg",
-              productName: "Mini Silver Mesh Watch",
-              productCost: "$86.85"
-            },
-            {
-              productImg: "product-16.jpg",
-              productName: "quare Neck Back",
-              productCost: "$29.64"
             }
           ]
         },
         {
-          tabName: "Top Rate",
+          tabName: "Bracelet",
           product: [
             {
-              productImg: "product-11.jpg",
-              productName: "Herschel supply",
-              productCost: "$63.16"
-            },
+              productImg: "img7.jpg",
+              productName: "BRACELET PARENN",
+              productCost: "$35.31"
+            }
+          ]
+        },
+        {
+          tabName: "Camion décharge",
+          product: [
             {
-              productImg: "product-13.jpg",
-              productName: "T-Shirt with Sleeve",
-              productCost: "$18.49"
-            },
-            {
-              productImg: "product-03.jpg",
-              productName: "Only Check Trouser",
-              productCost: "$25.50"
-            },
-            {
-              productImg: "product-04.jpg",
-              productName: "Classic Trench Coat",
-              productCost: "$75.00"
-            },
-            {
-              productImg: "product-05.jpg",
-              productName: "Front Pocket Jumper",
-              productCost: "$34.75"
-            },
-            {
-              productImg: "product-06.jpg",
-              productName: "Vintage Inspired Classic",
-              productCost: "$93.20"
-            },
-            {
-              productImg: "product-07.jpg",
-              productName: "Shirt in Stretch Cotton",
-              productCost: "$52.66"
-            },
-            {
-              productImg: "product-08.jpg",
-              productName: "Pieces Metallic Printed",
-              productCost: "$18.96"
+              productImg: "img8.jpg",
+              productName: "CAMION DÉCHARGE PARENN",
+              productCost: "$35.31"
             }
           ]
         }
+        // {
+        //   tabName: "Top Rate",
+        //   product: [
+        //     {
+        //       productImg: "product-11.jpg",
+        //       productName: "Herschel supply",
+        //       productCost: "$63.16"
+        //     },
+        //     {
+        //       productImg: "product-13.jpg",
+        //       productName: "T-Shirt with Sleeve",
+        //       productCost: "$18.49"
+        //     },
+        //     {
+        //       productImg: "product-03.jpg",
+        //       productName: "Only Check Trouser",
+        //       productCost: "$25.50"
+        //     },
+        //     {
+        //       productImg: "product-04.jpg",
+        //       productName: "Classic Trench Coat",
+        //       productCost: "$75.00"
+        //     },
+        //     {
+        //       productImg: "product-05.jpg",
+        //       productName: "Front Pocket Jumper",
+        //       productCost: "$34.75"
+        //     },
+        //     {
+        //       productImg: "product-06.jpg",
+        //       productName: "Vintage Inspired Classic",
+        //       productCost: "$93.20"
+        //     },
+        //     {
+        //       productImg: "product-07.jpg",
+        //       productName: "Shirt in Stretch Cotton",
+        //       productCost: "$52.66"
+        //     },
+        //     {
+        //       productImg: "product-08.jpg",
+        //       productName: "Pieces Metallic Printed",
+        //       productCost: "$18.96"
+        //     }
+        //   ]
+        // }
       ],
       currentActiveTab: "Best Seller"
     };

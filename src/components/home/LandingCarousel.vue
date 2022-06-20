@@ -6,19 +6,19 @@
           <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
             <div class="layer-slick1">
               <span class="ltext-101 cl2 respon2">
-                Women Collection 2018
+                PARENN HAITI
               </span>
             </div>
             <div class="layer-slick1">
               <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-                NEW SEASON
+                E-COMMERCE
               </h2>
             </div>
             <div class="layer-slick1" v-on:click="navChange('shop')">
               <router-link
                 to="/shop"
                 class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04"
-                >Shop Now</router-link
+                >Démarrer maintent</router-link
               >
             </div>
           </div>
@@ -29,19 +29,19 @@
           <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
             <div class="layer-slick1">
               <span class="ltext-101 cl2 respon2">
-                Men New-Season
+                PARENN HAITI
               </span>
             </div>
             <div class="layer-slick1">
               <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-                Jackets & Coats
+                A propos de nous
               </h2>
             </div>
             <div class="layer-slick1" v-on:click="navChange('shop')">
               <router-link
-                to="/shop"
+                to="/about"
                 class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04"
-                >Shop Now</router-link
+                >A propos</router-link
               >
             </div>
           </div>
@@ -52,19 +52,19 @@
           <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
             <div class="layer-slick1">
               <span class="ltext-101 cl2 respon2">
-                Men Collection 2018
+                Nous contacter pour
               </span>
             </div>
             <div class="layer-slick1">
               <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-                New arrivals
+                information
               </h2>
             </div>
             <div class="layer-slick1" v-on:click="navChange('shop')">
               <router-link
-                to="/shop"
+                to="/contact"
                 class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04"
-                >Shop Now</router-link
+                >Contact</router-link
               >
             </div>
           </div>

@@ -12,102 +12,67 @@ export default {
   },
   data() {
     return {
-      productlist: [
+      tabListData: [
         {
-          productImg: "product-01.jpg",
-          productName: "Esprit Ruffle Shirt",
-          productCost: "$16.64",
-          category: "women"
+          tabName: "Eau en bouteille",
+          product: [
+            {
+              productImg: "img4.jpg",
+              productName: "Herschel supply",
+              productCost: "$35.31"
+            }
+          ]
         },
         {
-          productImg: "product-02.jpg",
-          productName: "Herschel supply",
-          productCost: "$35.31",
-          category: "women"
+          tabName: "Parfum",
+          product: [
+            {
+              productImg: "img3.jpg",
+              productName: "Esprit Ruffle Shirt",
+              productCost: "$16.64"
+            }
+          ]
+        },
+
+        {
+          tabName: "Sac a poubelle",
+          product: [
+            {
+              productImg: "img6.jpg",
+              productName: "Esprit Ruffle Shirt",
+              productCost: "$16.64"
+            }
+          ]
         },
         {
-          productImg: "product-03.jpg",
-          productName: "Only Check Trouser",
-          productCost: "$25.50",
-          category: "men"
+          tabName: "Ciment",
+          product: [
+            {
+              productImg: "img5.jpg",
+              productName: "CIMENT PARENN",
+              productCost: "$35.31"
+            }
+          ]
         },
         {
-          productImg: "product-04.jpg",
-          productName: "Classic Trench Coat",
-          productCost: "$75.00",
-          category: "women"
+          tabName: "Bracelet",
+          product: [
+            {
+              productImg: "img7.jpg",
+              productName: "BRACELET PARENN",
+              productCost: "$35.31"
+            }
+          ]
         },
         {
-          productImg: "product-05.jpg",
-          productName: "Front Pocket Jumper",
-          productCost: "$34.75",
-          category: "women"
-        },
-        {
-          productImg: "product-06.jpg",
-          productName: "Vintage Inspired Classic",
-          productCost: "$93.20",
-          category: "watch"
-        },
-        {
-          productImg: "product-07.jpg",
-          productName: "Shirt in Stretch Cotton",
-          productCost: "$52.66",
-          category: "women"
-        },
-        {
-          productImg: "product-08.jpg",
-          productName: "Pieces Metallic Printed",
-          productCost: "$18.96",
-          category: "women"
-        },
-        {
-          productImg: "product-09.jpg",
-          productName: "Converse All Star Hi Plimsolls",
-          productCost: "$75.00",
-          category: "shoes"
-        },
-        {
-          productImg: "product-10.jpg",
-          productName: "Herschel supply",
-          productCost: "$63.16",
-          category: "women"
-        },
-        {
-          productImg: "product-11.jpg",
-          productName: "T-Shirt with Sleeve",
-          productCost: "$18.49",
-          category: "men"
-        },
-        {
-          productImg: "product-12.jpg",
-          productName: "Mini Silver Mesh Watch",
-          productCost: "$86.85",
-          category: "belts"
-        },
-        {
-          productImg: "product-13.jpg",
-          productName: "quare Neck Back",
-          productCost: "$29.64",
-          category: "women"
-        },
-        {
-          productImg: "product-14.jpg",
-          productName: "Silver Mesh",
-          productCost: "$49.64",
-          category: "women"
-        },
-        {
-          productImg: "product-15.jpg",
-          productName: "Neck Back",
-          productCost: "$59.64",
-          category: "watch"
-        },
-        {
-          productImg: "product-16.jpg",
-          productName: "quare Neck",
-          productCost: "$29.64",
-          category: "women"
+          tabName: "Camion décharge",
+          product: [
+            {
+              productImg: "img8.jpg",
+              productName: "CAMION DÉCHARGE PARENN",
+              productCost: "$35.31"
+            }
+          ]
         }
       ]
     };

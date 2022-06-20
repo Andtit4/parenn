@@ -25,7 +25,7 @@
                 v-bind:class="{ 'active-menu': currentPage == 'home' }"
                 v-on:click="navChange('home')"
               >
-                <router-link to="/">Home</router-link>
+                <router-link to="/">Accueil</router-link>
               </li>
               <li
                 v-bind:class="{ 'active-menu': currentPage == 'shop' }"
@@ -37,7 +37,7 @@
                 v-bind:class="{ 'active-menu': currentPage == 'about' }"
                 v-on:click="navChange('about')"
               >
-                <router-link to="/about">About</router-link>
+                <router-link to="/about">A propos / service</router-link>
               </li>
               <li
                 v-bind:class="{ 'active-menu': currentPage == 'contact' }"
@@ -54,19 +54,19 @@
               class="dis-block customLink cl2 hov-cl1 trans-04 p-l-22 p-r-11"
               v-on:click="loginModalStatus()"
             >
-              Log In / Sign Up
+              Connexion / Inscription
             </a>
-            <div class="displayNameMenu cl2">
+            <!-- <div class="displayNameMenu cl2">
               <span class="customLink">Aravind Kumar J</span>&nbsp;<i
                 class="fa fa-chevron-down"
                 aria-hidden="true"
               ></i>
               <ul class="sub-menu">
-                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Mon pro</a></li>
                 <li><a href="#">My Orders</a></li>
                 <li><a href="#">Logout</a></li>
               </ul>
-            </div>
+            </div> -->
             <router-link
               to="/shop/shopping-cart"
               class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
@@ -131,24 +131,24 @@
           </li>
           <li>
             <a href="javascript:void(0)" v-on:click="loginModalStatus()">
-              Log In / Sign Up
+              Connexion / Inscription
             </a>
           </li>
           <li @click="mobnavChange('home')">
-            <router-link to="/">Home</router-link>
+            <router-link to="/">Accueil</router-link>
           </li>
           <li @click="mobnavChange('shop')">
             <router-link to="/shop">Shop</router-link>
           </li>
           <li @click="mobnavChange('about')">
-            <router-link to="/about">About</router-link>
+            <router-link to="/about">A propos / Service</router-link>
           </li>
           <li @click="mobnavChange('contact')">
             <router-link to="/contact">Contact</router-link>
           </li>
-          <li><a href="#">My Profile</a></li>
+          <!-- <li><a href="#">My Profile</a></li>
           <li><a href="#">My Orders</a></li>
-          <li><a href="#">Logout</a></li>
+          <li><a href="#">Logout</a></li> -->
         </ul>
       </div>
     </header>
@@ -160,16 +160,16 @@
         <div class="row">
           <div class="col-sm-6 col-lg-4 p-b-50">
             <h4 class="stext-301 cl0 p-b-30">
-              Categories
+              Objectifs
             </h4>
             <ul>
               <li class="p-b-10">
                 <router-link
-                  to="/shop"
+                  to="/about"
                   v-on:click="navChange('shop')"
                   class="stext-107 cl7 hov-cl1 trans-04"
                 >
-                  Women
+                  service
                 </router-link>
               </li>
               <li class="p-b-10">
@@ -178,16 +178,7 @@
                   v-on:click="navChange('shop')"
                   class="stext-107 cl7 hov-cl1 trans-04"
                 >
-                  Men
-                </router-link>
-              </li>
-              <li class="p-b-10">
-                <router-link
-                  to="/shop"
-                  v-on:click="navChange('shop')"
-                  class="stext-107 cl7 hov-cl1 trans-04"
-                >
-                  Accessories
+                  produit
                 </router-link>
               </li>
             </ul>
@@ -199,21 +190,6 @@
             <ul>
               <li class="p-b-10">
                 <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                  Track Order
-                </a>
-              </li>
-              <li class="p-b-10">
-                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                  Returns
-                </a>
-              </li>
-              <li class="p-b-10">
-                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                  Shipping
-                </a>
-              </li>
-              <li class="p-b-10">
-                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
                   FAQs
                 </a>
               </li>
@@ -221,11 +197,10 @@
           </div>
           <div class="col-sm-6 col-lg-4 p-b-50">
             <h4 class="stext-301 cl0 p-b-30">
-              GET IN TOUCH
+              NOUS CONTACTER
             </h4>
             <p class="stext-107 cl7 size-201">
-              Any questions? Let us know in Rani store at 8th floor, 379 Hudson
-              St, New York, NY 10018 or call us on (+91) 96 716 68795
+             Appelez-nous  +(509) 44 54 54 25
             </p>
             <div class="p-t-27">
               <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
@@ -253,7 +228,7 @@
             </a>
           </div>
           <p class="stext-107 cl6 txt-center">
-            Copyright &copy; 2019 All rights reserved
+            Copyright &copy; 2022 All rights reserved
           </p>
         </div>
       </div>
@@ -287,12 +262,12 @@
                 <b-nav-item
                   :active="isLoginMode"
                   @click="loginModeChange('login')"
-                  >LOG IN</b-nav-item
+                  >CONNEXION</b-nav-item
                 >
                 <b-nav-item
                   :active="!isLoginMode"
                   @click="loginModeChange('signup')"
-                  >SIGN UP</b-nav-item
+                  >ADHÉRER</b-nav-item
                 >
               </b-nav>
               <div class="row">
@@ -301,13 +276,13 @@
                     <b-form-group>
                       <b-form-input
                         type="text"
-                        placeholder="Enter Email"
+                        placeholder="Entrer votre adresse courrielle"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group>
                       <b-form-input
                         type="password"
-                        placeholder="Enter Password"
+                        placeholder="Entrer votre mot de passe"
                       ></b-form-input>
                     </b-form-group>
                     <div class="text-center">
@@ -315,11 +290,11 @@
                         type="button"
                         class="stext-101 cl0 size-101 bg1 bor14 hov-btn1 p-lr-15 trans-04 pointer"
                       >
-                        Submit
+                        CONNEXION
                       </button>
                       <br />
                       <span class="m-tb-15 cl2 frgtPasslink"
-                        >FORGOT PASSWORD ?</span
+                        >MOT DE PASSE OUBLIÉ ?</span
                       >
                     </div>
                   </b-form>
@@ -329,31 +304,31 @@
                     <b-form-group>
                       <b-form-input
                         type="text"
-                        placeholder="Enter Firstname"
+                        placeholder="Entrer votre prénom"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group>
                       <b-form-input
                         type="text"
-                        placeholder="Enter Lastname"
+                        placeholder="Entrer votre nom"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group>
                       <b-form-input
                         type="text"
-                        placeholder="Enter Email"
+                        placeholder="Entrer adresse courielle"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group>
                       <b-form-input
                         type="password"
-                        placeholder="Enter Password"
+                        placeholder="Entrer votre mot de passe"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group>
                       <b-form-input
                         type="password"
-                        placeholder="Confirm Password"
+                        placeholder="Confirmer le mot de passe"
                       ></b-form-input>
                     </b-form-group>
                     <div class="text-center">
@@ -361,7 +336,7 @@
                         type="button"
                         class="stext-101 cl0 size-101 bg1 bor14 hov-btn1 p-lr-15 trans-04 pointer"
                       >
-                        Submit
+                        Adhérer a la communauté
                       </button>
                     </div>
                   </b-form>
