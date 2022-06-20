@@ -1,5 +1,4 @@
-# online-store
-
+# PARENN
 ## Project setup
 ```
 npm install
