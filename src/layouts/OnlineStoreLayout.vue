@@ -200,7 +200,7 @@
               NOUS CONTACTER
             </h4>
             <p class="stext-107 cl7 size-201">
-             Appelez-nous  +(509) 44 54 54 25
+              Appelez-nous +(509) 44 54 54 25
             </p>
             <div class="p-t-27">
               <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
@@ -301,18 +301,6 @@
                 </div>
                 <div class="mx-auto col-sm-9 col-md-9" v-if="!isLoginMode">
                   <b-form class="m-tb-40">
-                    <b-form-group>
-                      <b-form-input
-                        type="text"
-                        placeholder="Entrer votre prénom"
-                      ></b-form-input>
-                    </b-form-group>
-                    <b-form-group>
-                      <b-form-input
-                        type="text"
-                        placeholder="Entrer votre nom"
-                      ></b-form-input>
-                    </b-form-group>
                     <b-form-group>
                       <b-form-input
                         type="text"
