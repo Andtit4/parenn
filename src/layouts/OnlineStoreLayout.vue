@@ -127,7 +127,7 @@
       <div class="menu-mobile" v-if="hamburgerStatus">
         <ul class="main-menu-m">
           <li>
-            <span class="mobTopHeader">Welcome Aravind Kumar</span>
+            <span class="mobTopHeader">Bienvenue</span>
           </li>
           <li>
             <a href="javascript:void(0)" v-on:click="loginModalStatus()">
