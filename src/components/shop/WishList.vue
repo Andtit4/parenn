@@ -6,9 +6,7 @@
         Shop
         <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
       </router-link>
-      <span class="stext-109 cl4">
-        Liste de souhait
-      </span>
+      <span class="stext-109 cl4"> Liste de souhait </span>
     </div>
     <!-- Shoping Cart -->
     <form class="bg0 p-t-75 p-b-45">
@@ -79,7 +77,7 @@ export default {
   components: {},
   data() {
     return {};
-  }
+  },
 };
 </script>
 <style scoped>

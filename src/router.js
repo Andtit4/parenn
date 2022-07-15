@@ -12,46 +12,49 @@ import Contact from "./views/Contact.vue";
 Vue.use(Router);
 
 export default new Router({
-    mode: "history",
-    base: process.env.BASE_URL,
-    routes: [{
-            path: "/",
-            name: "home",
-            component: Home
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes: [
+    {
+      path: "/",
+      name: "home",
+      component: Home,
+    },
+    {
+      path: "/shop",
+      component: Shop,
+      children: [
+        {
+          path: "",
+          name: "shophome",
+          component: ShopHome,
         },
         {
-            path: "/shop",
-            component: Shop,
-            children: [{
-                path: "",
-                name: "shophome",
-                component: ShopHome
-            },
-            {
-                path: "product",
-                name: "productdetail",
-                component: ProductDetail
-            },
-            {
-                path: "shopping-cart",
-                name: "shoppingcart",
-                component: ShoppingCart
-            },
-            {
-                path: "wishlist",
-                name: "wishlist",
-                component: WishList
-            }]
+          path: "product",
+          name: "productdetail",
+          component: ProductDetail,
         },
         {
-            path: "/about",
-            name: "about",
-            component: About
+          path: "shopping-cart",
+          name: "shoppingcart",
+          component: ShoppingCart,
         },
         {
-            path: "/contact",
-            name: "contact",
-            component: Contact
-        }
-    ]
+          path: "wishlist",
+          name: "wishlist",
+          component: WishList,
+        },
+      ],
+    },
+    {
+      path: "/about",
+      name: "about",
+      component: About,
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: Contact,
+    },
+  ],
 });

@@ -83,7 +83,7 @@
             </router-link>
           </div>
           <div class="block2-txt flex-w flex-t p-t-14">
-            <div class="block2-txt-child1 flex-col-l ">
+            <div class="block2-txt-child1 flex-col-l">
               <router-link
                 class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"
                 to="/shop/product"
@@ -126,10 +126,10 @@ import imagesLoaded from "vue-images-loaded";
 export default {
   name: "ShopIsotope",
   components: {
-    isotope
+    isotope,
   },
   directives: {
-    imagesLoaded
+    imagesLoaded,
   },
   data() {
     return {
@@ -144,30 +144,30 @@ export default {
         percentPosition: true,
         animationEngine: "best-available",
         masonry: {
-          columnWidth: ".isotope-item"
+          columnWidth: ".isotope-item",
         },
         getFilterData: {
-          "all product": function() {
+          "all product": function () {
             return true;
           },
-          women: function(el) {
+          women: function (el) {
             return el.category === "women";
           },
-          men: function(el) {
+          men: function (el) {
             return el.category === "men";
           },
-          bag: function(el) {
+          bag: function (el) {
             return el.category === "bag";
           },
-          shoes: function(el) {
+          shoes: function (el) {
             return el.category === "shoes";
           },
 
-          watches: function(el) {
+          watches: function (el) {
             return el.category === "watches";
-          }
-        }
-      }
+          },
+        },
+      },
     };
   },
   props: ["productData"],
@@ -195,7 +195,7 @@ export default {
     searchStatus() {
       this.searchToggleStatus = !this.searchToggleStatus;
       this.filterToggleStatus = false;
-    }
-  }
+    },
+  },
 };
 </script>

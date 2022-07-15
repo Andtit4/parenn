@@ -8,7 +8,7 @@ import ShopIsotope from "@/components/shop/ShopIsotope.vue";
 export default {
   name: "ShopHome",
   components: {
-    ShopIsotope
+    ShopIsotope,
   },
   data() {
     return {
@@ -19,9 +19,9 @@ export default {
             {
               productImg: "img4.jpg",
               productName: "Herschel supply",
-              productCost: "$35.31"
-            }
-          ]
+              productCost: "$35.31",
+            },
+          ],
         },
         {
           tabName: "Parfum",
@@ -29,9 +29,9 @@ export default {
             {
               productImg: "img3.jpg",
               productName: "Esprit Ruffle Shirt",
-              productCost: "$16.64"
-            }
-          ]
+              productCost: "$16.64",
+            },
+          ],
         },
 
         {
@@ -40,9 +40,9 @@ export default {
             {
               productImg: "img6.jpg",
               productName: "Esprit Ruffle Shirt",
-              productCost: "$16.64"
-            }
-          ]
+              productCost: "$16.64",
+            },
+          ],
         },
         {
           tabName: "Ciment",
@@ -50,9 +50,9 @@ export default {
             {
               productImg: "img5.jpg",
               productName: "CIMENT PARENN",
-              productCost: "$35.31"
-            }
-          ]
+              productCost: "$35.31",
+            },
+          ],
         },
         {
           tabName: "Bracelet",
@@ -60,9 +60,9 @@ export default {
             {
               productImg: "img7.jpg",
               productName: "BRACELET PARENN",
-              productCost: "$35.31"
-            }
-          ]
+              productCost: "$35.31",
+            },
+          ],
         },
         {
           tabName: "Camion décharge",
@@ -70,12 +70,12 @@ export default {
             {
               productImg: "img8.jpg",
               productName: "CAMION DÉCHARGE PARENN",
-              productCost: "$35.31"
-            }
-          ]
-        }
-      ]
+              productCost: "$35.31",
+            },
+          ],
+        },
+      ],
     };
-  }
+  },
 };
 </script>

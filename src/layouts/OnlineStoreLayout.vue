@@ -6,7 +6,7 @@
       <div
         class="wrap-menu-desktop"
         v-bind:class="{
-          'fix-menu-desktop': toggleFixedDesktopMenu || currentPage != 'home'
+          'fix-menu-desktop': toggleFixedDesktopMenu || currentPage != 'home',
         }"
       >
         <nav class="limiter-menu-desktop container-fluid">
@@ -159,9 +159,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-lg-4 p-b-50">
-            <h4 class="stext-301 cl0 p-b-30">
-              Objectifs
-            </h4>
+            <h4 class="stext-301 cl0 p-b-30">Objectifs</h4>
             <ul>
               <li class="p-b-10">
                 <router-link
@@ -184,21 +182,15 @@
             </ul>
           </div>
           <div class="col-sm-6 col-lg-4 p-b-50">
-            <h4 class="stext-301 cl0 p-b-30">
-              Help
-            </h4>
+            <h4 class="stext-301 cl0 p-b-30">Help</h4>
             <ul>
               <li class="p-b-10">
-                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                  FAQs
-                </a>
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> FAQs </a>
               </li>
             </ul>
           </div>
           <div class="col-sm-6 col-lg-4 p-b-50">
-            <h4 class="stext-301 cl0 p-b-30">
-              NOUS CONTACTER
-            </h4>
+            <h4 class="stext-301 cl0 p-b-30">NOUS CONTACTER</h4>
             <p class="stext-107 cl7 size-201">
               Appelez-nous +(509) 44 54 54 25
             </p>
@@ -347,7 +339,7 @@ export default {
       toggleMobileMenu: true,
       hamburgerStatus: false,
       loginModalToggle: false,
-      isLoginMode: true
+      isLoginMode: true,
     };
   },
   methods: {
@@ -369,7 +361,7 @@ export default {
       window.scroll({
         top: 0,
         left: 0,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     },
     handleresize() {
@@ -400,7 +392,7 @@ export default {
       } else {
         this.isLoginMode = false;
       }
-    }
+    },
   },
   created() {
     let routeName = this.$route.name;
@@ -424,7 +416,7 @@ export default {
   computed: {
     currentPage() {
       return this.$store.getters.pathname;
-    }
-  }
+    },
+  },
 };
 </script>

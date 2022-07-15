@@ -2,9 +2,7 @@
   <div class="contact">
     <!-- Title page -->
     <section class="bg-img1 txt-center p-lr-15 p-tb-150 bg_img">
-      <h2 class="ltext-105 cl0 txt-center">
-        Contact
-      </h2>
+      <h2 class="ltext-105 cl0 txt-center">Contact</h2>
     </section>
     <!-- Content page -->
     <section class="bg0 p-t-104 p-b-116">
@@ -57,9 +55,7 @@
               </span>
 
               <div class="size-212 p-t-2">
-                <span class="mtext-110 cl2">
-                  Adresse
-                </span>
+                <span class="mtext-110 cl2"> Adresse </span>
 
                 <p class="stext-115 cl6 size-213 p-t-18">
                   Delmas 19, Paul II, Port-au-Prince, Haiti US
@@ -73,13 +69,9 @@
               </span>
 
               <div class="size-212 p-t-2">
-                <span class="mtext-110 cl2">
-                  Appelez-nous
-                </span>
+                <span class="mtext-110 cl2"> Appelez-nous </span>
 
-                <p class="stext-115 cl1 size-213 p-t-18">
-                  +(509) 44 54 54 25
-                </p>
+                <p class="stext-115 cl1 size-213 p-t-18">+(509) 44 54 54 25</p>
               </div>
             </div>
 
@@ -89,13 +81,9 @@
               </span>
 
               <div class="size-212 p-t-2">
-                <span class="mtext-110 cl2">
-                  Support
-                </span>
+                <span class="mtext-110 cl2"> Support </span>
 
-                <p class="stext-115 cl1 size-213 p-t-18">
-                  info@parenn.ht
-                </p>
+                <p class="stext-115 cl1 size-213 p-t-18">info@parenn.ht</p>
               </div>
             </div>
           </div>
@@ -106,7 +94,7 @@
 </template>
 <script>
 export default {
-  name: "contact"
+  name: "contact",
 };
 </script>
 <style scoped>
