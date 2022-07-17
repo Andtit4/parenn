@@ -12,7 +12,7 @@
       <div class="block2">
         <div class="block2-pic hov-img0">
           <img
-            v-bind:src="getImgPath(item.productImg)"
+            src="https://i.etsystatic.com/11701838/r/il/6d80d8/2706766305/il_570xN.2706766305_oib2.jpg"
             v-bind:alt="item.productName"
           />
           <a
@@ -28,10 +28,10 @@
               href="product-detail.html"
               class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"
             >
-              {{ item.productName }}
+              {{ item.name }}
             </a>
             <span class="stext-105 cl3">
-              {{ item.productCost }}
+              {{ item.price }}
             </span>
           </div>
           <div class="block2-txt-child2 flex-r p-t-3">
@@ -107,7 +107,14 @@ export default {
           },
         ],
       },
-      productData: this.currentTabData.product,
+      productData: [
+        {
+          id: 1,
+          productImg: "img4.jpg",
+          name: "Herschel supply",
+          price: "$1,200",
+        },
+      ],
     };
   },
   // All slick methods can be used too, example here
@@ -116,6 +123,6 @@ export default {
       return imgName ? require("@/assets/images/" + imgName) : "";
     },
   },
-  props: ["currentTabData"],
+  props: ["product"],
 };
 </script>
