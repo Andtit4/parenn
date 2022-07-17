@@ -10,12 +10,12 @@ export default {
   computed: {
     layout() {
       return this.$store.getters.layout;
-    }
+    },
   },
   components: {
     "online-store-layout": OnlineStoreLayout,
-    "admin-panel-layout": AdminPanelLayout
-  }
+    "admin-panel-layout": AdminPanelLayout,
+  },
 };
 </script>
 <style></style>

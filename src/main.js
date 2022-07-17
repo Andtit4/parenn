@@ -23,7 +23,7 @@ const firebaseConfig = {
   storageBucket: "test-2fff1.appspot.com",
   messagingSenderId: "793551042205",
   appId: "1:793551042205:web:62f75e7bc93076facac674",
-  measurementId: "G-F1VBNQ6M9L"
+  measurementId: "G-F1VBNQ6M9L",
 };
 
 // Initialize Firebase
@@ -33,5 +33,5 @@ const analytics = getAnalytics(app);
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");

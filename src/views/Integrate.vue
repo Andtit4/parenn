@@ -89,9 +89,7 @@
         <div
           class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md"
         >
-          <h4 class="mtext-105 cl2 txt-center p-b-30">
-            Type d'identification
-          </h4>
+          <h4 class="mtext-105 cl2 txt-center p-b-30">Type d'identification</h4>
           <div class="flex-w w-full p-b-42">
             <span class="fs-18 cl5 txt-center size-211">
               <span class="lnr lnr-map-marker"></span>
@@ -193,7 +191,6 @@
             />
           </div>
 
-
           <div class="flex-w w-full p-b-42">
             <span class="fs-18 cl5 txt-center size-211">
               <span class="lnr lnr-map-marker"></span>
@@ -225,7 +222,7 @@
 
 <script>
 export default {
-  name: "home"
+  name: "home",
 };
 </script>
 

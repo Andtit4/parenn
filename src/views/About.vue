@@ -2,9 +2,7 @@
   <div class="about">
     <!-- Title page -->
     <section class="bg-img1 txt-center p-lr-15 p-tb-150 bg_img">
-      <h2 class="ltext-105 cl0 txt-center">
-        A propos et service
-      </h2>
+      <h2 class="ltext-105 cl0 txt-center">A propos et service</h2>
     </section>
     <!-- Content page -->
     <section class="bg0 p-t-75 p-b-120">
@@ -12,9 +10,7 @@
         <div class="row p-b-148">
           <div class="col-md-7 col-lg-8">
             <div class="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
-              <h3 class="mtext-111 cl2 p-b-16">
-                Qui sommes-nous?
-              </h3>
+              <h3 class="mtext-111 cl2 p-b-16">Qui sommes-nous?</h3>
 
               <p class="stext-113 cl6 p-b-26">
                 Pas de contenu pour l'instant...
@@ -23,13 +19,13 @@
               <p class="stext-113 cl6 p-b-26"></p>
 
               <p class="stext-113 cl6 p-b-26">
-                Appelez-nous  +(509) 44 54 54 25
+                Appelez-nous +(509) 44 54 54 25
               </p>
             </div>
           </div>
 
           <div class="col-11 col-md-5 col-lg-4 m-lr-auto">
-            <div class="how-bor1 ">
+            <div class="how-bor1">
               <div class="hov-img0">
                 <img src="../assets/images/about-01.jpg" alt="IMG" />
               </div>
@@ -40,9 +36,7 @@
         <div class="row">
           <div class="order-md-2 col-md-7 col-lg-8 p-b-30">
             <div class="p-t-7 p-l-85 p-l-15-lg p-l-0-md">
-              <h3 class="mtext-111 cl2 p-b-16">
-                Nôtre mission
-              </h3>
+              <h3 class="mtext-111 cl2 p-b-16">Nôtre mission</h3>
 
               <p class="stext-113 cl6 p-b-26">
                 Nous apportons une solution plateforme en ligne permettant aux
@@ -57,9 +51,7 @@
                   déja un compte vous connecter
                 </p>
 
-                <span class="stext-111 cl8">
-                  - Groupe PARENN HAITI
-                </span>
+                <span class="stext-111 cl8"> - Groupe PARENN HAITI </span>
               </div>
             </div>
           </div>
@@ -78,7 +70,7 @@
 </template>
 <script>
 export default {
-  name: "about"
+  name: "about",
 };
 </script>
 <style scoped>
